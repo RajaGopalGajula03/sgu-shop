@@ -31,11 +31,11 @@
 }
 
 .first-banner:before {
-    background-image: url("https://demo-morata.myshopify.com/cdn/shop/files/2_4.png?v=1700194615&width=1500");
+    background-image: url('https://demo-morata.myshopify.com/cdn/shop/files/2_4.png?v=1700194615&width=1500');
 }
 
 .second-banner:before {
-    background-image: url("https://demo-morata.myshopify.com/cdn/shop/files/2_5.png?v=1700194615&width=1500");
+    background-image: url('https://demo-morata.myshopify.com/cdn/shop/files/2_5.png?v=1700194615&width=1500');
 }
 
 .banner:hover:before {

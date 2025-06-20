@@ -8,7 +8,7 @@
 }
 
 .carousel-item.samsung {
-    background-image: url("https://demo-morata.myshopify.com/cdn/shop/files/banner_2_1.png?v=1700121262&width=1500");
+    background-image: url('https://demo-morata.myshopify.com/cdn/shop/files/banner_2_1.png?v=1700121262&width=1500');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* Ensure the background covers the whole area */
@@ -34,7 +34,7 @@
     top: 100px;
 }
 .carousel-item.washing {
-    background-image: url("https://demo-morata.myshopify.com/cdn/shop/files/banner_2_2.png?v=1700121262&width=1500");
+    background-image: url('https://demo-morata.myshopify.com/cdn/shop/files/banner_2_2.png?v=1700121262&width=1500');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* Ensure the background covers the whole area */
@@ -43,7 +43,7 @@
 }
 
 .carousel-item.food {
-    background-image: url("https://demo-morata.myshopify.com/cdn/shop/files/banner_2_3.png?v=1700121262&width=1500");
+    background-image: url('https://demo-morata.myshopify.com/cdn/shop/files/banner_2_3.png?v=1700121262&width=1500');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; /* Ensure the background covers the whole area */
@@ -101,15 +101,15 @@ p{
 }
 
 .lap-div::before {
-    background-image: url("https://demo-morata.myshopify.com/cdn/shop/files/2_1.png?v=1700109332&width=1500");
+    background-image: url('https://demo-morata.myshopify.com/cdn/shop/files/2_1.png?v=1700109332&width=1500');
 }
 
 .earphone-div::before {
-    background-image: url("https://demo-morata.myshopify.com/cdn/shop/files/2_2.png?v=1700109332&width=1500");
+    background-image: url('https://demo-morata.myshopify.com/cdn/shop/files/2_2.png?v=1700109332&width=1500');
 }
 
 .qled-div::before {
-    background-image: url("https://demo-morata.myshopify.com/cdn/shop/files/2_3.png?v=1700109332&width=1500");
+    background-image: url('https://demo-morata.myshopify.com/cdn/shop/files/2_3.png?v=1700109332&width=1500');
 }
 
 .lap-div:hover::before, .earphone-div:hover::before, .qled-div:hover::before {
