@@ -1,5 +1,6 @@
 {
     "git.enabled": true,
     "git.diagnosticsCommitHook.enabled": true,
-    "git.blame.editorDecoration.enabled": true
+    "git.blame.editorDecoration.enabled": true,
+    "git.ignoreLimitWarning": true
 }
