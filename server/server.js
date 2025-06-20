@@ -14,8 +14,9 @@ const port = 4445 || process.env.PORT;
 app.use(express.json());
 
 const apiRoutes = require("./routes/apiRoutes");
-
+const authRoutes = require("./routes/authRoutes");
 app.use("/api",apiRoutes);
+app.use("/auth",authRoutes);
 
 // DB Initialization
 mongoose.connect('mongodb+srv://rajagopalgajula520:raja123@cluster0.swlko.mongodb.net/sguShop?retryWrites=true&w=majority&appName=Cluster0')
