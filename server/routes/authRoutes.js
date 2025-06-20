@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const UsersData = require("../models/Users")
 const bcrypt = require("bcrypt");
@@ -50,7 +51,7 @@ router.post("/login",async(req,res)=>{
                 const payload = {
                     userId: isUserExist._id
                 }
-                const token = jwt.sign(payload,"SGU_JWT",{expiresIn:'2HR'});
+                const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '2h' });
                 return res.status(200).json({message:"Login Successful",token:token})
             }
             else

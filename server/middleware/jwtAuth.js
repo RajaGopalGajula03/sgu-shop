@@ -1,3 +1,4 @@
+require("dotenv").config();
 const jwt = require("jsonwebtoken");
 
 const jwtAuth = async(req,res,next)=>{
@@ -15,7 +16,7 @@ const jwtAuth = async(req,res,next)=>{
             return res.status(401).json({message:"No token provided"})
         }else
         {
-            jwt.verify(jwtToken,"SGU_JWT",async(err,payload)=>{
+            jwt.verify(jwtToken, process.env.JWT_SECRET, async (err, payload)=>{
                 if(err){
                     return res.status(401).json({message:"Invalid JWT Token"})
                 }
