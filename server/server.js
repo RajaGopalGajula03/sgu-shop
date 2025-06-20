@@ -17,10 +17,10 @@ mongoose.connect('mongodb+srv://rajagopalgajula520:raja123@cluster0.swlko.mongod
 .then(()=>console.log('DB Connected'))
 .catch((e)=>console.log(e));
 
+app.get('/', (req, res) => {
+  res.send('Welcome to SGU Shop API!');
+});
 
-
-app.use("/auth",require("./routes/authRoutes")); 
-app.use("/api",require("./routes/apiRoutes"));
 
 app.listen(port,()=>{
     console.log(`Server running at ${port}`);
