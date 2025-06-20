@@ -1,4 +1,4 @@
-const server = "http://localhost:4445"
+const server = process.env.REACT_APP_BACKEND_URL || "http://localhost:4445";
 
 export const apiList = {
     signup:`${server}/auth/signup`,
