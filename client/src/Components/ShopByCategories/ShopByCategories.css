@@ -1,0 +1,92 @@
+.shopby-category
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 20px;
+}
+.shop-heading
+{
+    margin-top: 40px;
+    border-bottom: 3px solid #ff7e00;
+    padding-bottom: 16px;
+    margin-bottom: -36px;
+    font-size: 25px;
+}
+.category-div1
+{
+    position: relative;
+    /* border-right: 1px solid #ddd; */
+    padding: 10px;
+    width: calc(20% - 20px);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-right: 20px;
+}
+.list-names
+{
+    display: flex;
+    flex-direction: column;
+}
+.list-names a
+{
+    text-decoration: none;
+    outline: none;
+}
+.shop-image
+{
+    width: 100%;
+    transition: transform 1.5s ease;
+    border-radius: 5px;
+}
+.shop-image:hover{
+    transform: scale(1.1);
+}
+.shop-title
+{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.list
+{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.category-div1 {
+    padding: 20px;
+    position: relative;
+}
+
+.category-div1:nth-child(-n+6)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ddd; /* Adjust the color as needed */
+    height: 100%;
+}
+
+.category-div1:last-child::after {
+    display: none; /* Hide the line after the last div */
+}
+
+
+@media (max-width: 320px) {
+    .category-div1 {
+      width: 100vw; /* Ensure full width for the single item view */
+      margin-right: 0; /* Remove margin for proper alignment */
+    }
+  }
+
+  @media (min-width:321px) and (max-width:375px) and (max-width:425px) {
+    .category-div1{
+        width: calc(50% - 20px);
+    }
+  }

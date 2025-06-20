@@ -1,0 +1,9 @@
+Link{
+  color: black;
+  font-size: 30px;
+}
+Link:hover
+{
+  text-decoration: none;
+  outline: none;
+}

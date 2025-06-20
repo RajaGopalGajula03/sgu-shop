@@ -1,0 +1,209 @@
+.btn-container {
+    display: flex;
+    justify-content: space-between; /* Space between the buttons */
+    align-items: center;
+    width: 100%;
+    padding: 0 20px; /* Optional: add padding to the sides */
+    margin-bottom: 30px;
+}
+
+.login-button {
+    background: none;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px; /* Optional: adjust the font size */
+    padding-bottom: 15px; /* Optional: add some padding for spacing */
+    border-bottom: 3px solid ; /* Grey border for both buttons */
+    width: 50%; /* Set the width of the border */
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 600;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.login-button:not(.btn-off) {
+    border-bottom-color: #ff7e00; 
+    /* Orange border for the active button */
+    color: #ff7e00;
+}
+
+.login-button.btn-off {
+    border-bottom-color: #93969d; /* Keep grey border for inactive button */
+}
+
+.close
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 120px;
+    padding-bottom: 20px;
+}
+.modal-content
+{
+    padding: 20px 40px;
+}
+.label{
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.astrik
+{
+    color: #ff7e00;
+    font-size: 15px;
+}
+.user-input
+{
+    width: 100%;
+    padding: 10px ;
+    border-radius: 5px;
+    border: 1px solid #93969d;
+}
+.user-input::placeholder
+{
+    font-weight: 600;
+    font-size: 15px;
+}
+.user-input:focus
+{
+    border: 1px thin black;
+}
+.forgot-text
+{
+    font-size: 16px;
+    color: black;
+}
+.login-btn,.register-btn
+{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+.login-btn:hover,.register-btn:hover
+{
+    background-color: #ff7e00;
+    transition: background-color 1s ease; 
+}
+.forgot-text:hover
+{   
+    color: #ff7e00;
+    transition: color 1s ease; 
+    cursor: pointer;
+}
+.modal-footer p
+{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+.modal-footer-text
+{
+    color: #ff7e00;
+    cursor: pointer;
+}
+
+
+.modal-hide {
+    display: none;
+}
+
+.modal-show {
+    display: block;
+    position: fixed; /* Ensures the modal covers the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's above other content */
+    overflow: scroll;
+}
+
+.modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* .modal-content {
+    /* overflow: scroll; */
+/* } */ */
+
+.close {
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+}
+
+@media (max-width: 320px) {
+    .modal-dialog {
+        width: 100%; /* Use full width for very small screens */
+        margin: 0; /* Remove default margin */
+        padding: 10px; /* Adjust padding for smaller screens */
+        box-sizing: border-box; /* Ensure padding does not affect the total width */
+    }
+}
+
+
+/* General Modal Styles */
+/* General Modal Styles */
+.modal-hide {
+    display: none;
+}
+
+.modal-show {
+    display: block;
+    position: fixed; /* Ensures the modal covers the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's above other content */
+    overflow: auto; /* Enable scrolling if necessary */
+}
+
+.modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%; /* Adjust width to fit within small screens */
+    max-width: 500px; /* Maximum width to avoid overly large modals on larger screens */
+    box-sizing: border-box; /* Ensure padding does not affect the total width */
+}
+
+/* Close Button */
+.close {
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 320px) {
+    .modal-dialog {
+        width: 320px; /* Use full width for very small screens */
+        margin: 0; /* Remove default margin */
+        padding: 10px; /* Adjust padding for smaller screens */
+        box-sizing: border-box; /* Ensure padding does not affect the total width */
+    }
+}

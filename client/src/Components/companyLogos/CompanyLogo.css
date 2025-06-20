@@ -1,0 +1,32 @@
+.company-div {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.company-list {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Center the items and add spacing */
+    width: 100%;
+    height: 140px;
+}
+
+.green {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 15px; Add some spacing between rows */
+}
+
+.green img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px; /* Optional: Add some rounding to the images */
+    transition: transform 1s ease;
+}
+.green img:hover{
+    transform: scale(1.1);
+}

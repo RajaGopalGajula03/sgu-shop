@@ -1,0 +1,182 @@
+.banner-div {
+    position: relative;
+    top: 30px;
+    overflow: hidden; /* Prevent horizontal scroll */
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.carousel-item.samsung {
+    background-image: url("https://demo-morata.myshopify.com/cdn/shop/files/banner_2_1.png?v=1700121262&width=1500");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background covers the whole area */
+    width: 100%; /* Ensure the width is 100% of the parent */
+    height: 600px; /* Fixed height for the carousel items */
+}
+
+.carousel-inner {
+    width: 100%; /* Ensure the carousel inner takes the full width */
+    overflow: hidden; /* Prevent overflow */
+}
+.carousel-caption
+{
+    display: flex;
+    color: #333e48;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-content: flex-start; */
+    align-items: flex-start;
+    position: relative;
+    text-align: start;
+    margin-left: -120px;
+    top: 100px;
+}
+.carousel-item.washing {
+    background-image: url("https://demo-morata.myshopify.com/cdn/shop/files/banner_2_2.png?v=1700121262&width=1500");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background covers the whole area */
+    width: 100%; /* Ensure the width is 100% of the parent */
+    height: 600px; /* Fixed height for the carousel items */
+}
+
+.carousel-item.food {
+    background-image: url("https://demo-morata.myshopify.com/cdn/shop/files/banner_2_3.png?v=1700121262&width=1500");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background covers the whole area */
+    width: 100%; /* Ensure the width is 100% of the parent */
+    height: 600px; /* Fixed height for the carousel items */
+}
+h3{
+    font-size: 50px;
+}
+p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.get-btn
+{
+    margin-top: 20px;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 20px;
+    background-color: #333e48;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.get-btn:hover
+{
+    transition: background-color 1s ease;
+    background-color: #ff7e00;
+}
+.lap-div, .earphone-div, .qled-div {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 30px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    color: white;
+    overflow: hidden; /* To ensure the zoom effect doesn't overflow the container */
+}
+
+.lap-div::before, .earphone-div::before, .qled-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 1s ease; /* Smooth transition for the zoom effect */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+.lap-div::before {
+    background-image: url("https://demo-morata.myshopify.com/cdn/shop/files/2_1.png?v=1700109332&width=1500");
+}
+
+.earphone-div::before {
+    background-image: url("https://demo-morata.myshopify.com/cdn/shop/files/2_2.png?v=1700109332&width=1500");
+}
+
+.qled-div::before {
+    background-image: url("https://demo-morata.myshopify.com/cdn/shop/files/2_3.png?v=1700109332&width=1500");
+}
+
+.lap-div:hover::before, .earphone-div:hover::before, .qled-div:hover::before {
+    transform: scale(1.1);
+}
+.p2
+{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.item-container
+{
+    border: 1px solid gray;
+    margin: 40px 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+.free-shipping,.money-guarantee,.online-suuport,.discount1
+{
+    display: flex;
+    align-items: center;
+}
+i{
+    font-size: 40px;
+    margin-right: 20px;
+    
+}
+.heading3
+{
+    font-size: 20px;
+}
+.p3
+{
+    font-size: 15px;
+}
+.user1
+{
+    color: black;
+}
+
+@media (max-width: 1024px){
+    .product-div
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 1024px){
+    .lap-div,.earphone-div,.qled-div
+    {
+        margin-right: 10px;
+        margin-top: 10px;
+        background-size: cover;
+        background-position: center;
+        height: 150px;
+    }
+}
+
+@media (max-width:320px)
+{
+    .banner-div
+    {
+        width: 320px;
+    }
+}

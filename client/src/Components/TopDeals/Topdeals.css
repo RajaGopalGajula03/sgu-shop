@@ -1,0 +1,283 @@
+.top-deals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+
+.item-card {
+  position: relative;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: calc(50% - 10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: center;
+  /* align-items: center; */
+  bottom: 0;
+}
+
+.discount2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff7e00;
+  width: 50px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 2;
+}
+
+.image-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  padding-top: 75%; /* Aspect ratio */
+  overflow: hidden;
+  background: none;
+  margin-right: 20px
+}
+
+.deal-image,
+.deal-image-hover {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  transition: opacity 1s ease, transform 1s ease;
+  background: transparent;
+  outline: none;
+}
+
+.deal-image-hover {
+  opacity: 0;
+}
+
+.image-container:hover .deal-image-hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.image-container:hover .deal-image {
+  opacity: 0;
+}
+
+.item-title {
+  margin: 20px 0 10px;
+  font-size: 18px;
+}
+.item-title:hover{
+  transition: color 1s ease;
+  color: #ff7e00;
+}
+.stars {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #ffd700;
+}
+
+.reviews {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #888;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: red;
+}
+
+.specs {
+  /* list-style: none; */
+  padding: 0;
+  margin: 10px 0;
+  color: #333e48;
+}
+
+.specs li {
+  margin-bottom: 5px;
+}
+
+.countdown {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+  text-align: center;
+}
+.days,.hours,.mins,.secs{
+  background-color: lightblue;
+  padding: 10px 15px;
+  border-radius: 50%;
+
+}
+.sold {
+  font-size: 20px;
+  color: #555;
+  margin: 10px 0;
+  margin-top: 20px;
+}
+
+.add-to-cart {
+  background-color: #333e48;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.add-to-cart:hover {
+  background-color: #ff7e00;
+  transition: background-color 0.3s ease;
+}
+.specifications
+{
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.w3-light-grey {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+#myBar {
+  margin-top: 20px;
+  height: 10px;
+  background-color: #ff7e00;
+  border-radius: 5px;
+}
+.percentage
+{
+  color: black;
+  font-weight: 500;
+}
+.deals-heading
+{
+  font-size: 25px;
+  margin-bottom: -36px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ff7e00;
+}
+.spinner-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* or any other height as needed */
+}
+
+.spinner {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive styles for screens 320px wide or narrower */
+@media (max-width: 425px) {
+  .item-card {
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    width: 100%; /* Ensure card takes full width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 0;
+  }
+
+  .discount2 {
+    position: absolute;
+    top: 10px; /* Adjust to position discount at the top */
+    left: 10px; /* Adjust to position discount from the left */
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
+  .image-container {
+    width: 100%; /* Full width to fit the card */
+    height: 230px; /* Adjust height for the image container */
+    position: relative; /* Positioning relative for absolute children */
+    overflow: hidden; /* Ensure images don't overflow container */
+    margin-bottom: 10px; /* Space between image container and other elements */
+  }
+
+  .deal-image, .deal-image-hover {
+    width: 100%; /* Ensure images fit container width */
+    height: 100%; /* Ensure images fit container height */
+    object-fit: cover; /* Cover the container without distortion */
+    position: absolute; /* Stack images on top of each other */
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  .deal-image-hover {
+    opacity: 0; /* Hide hover image by default */
+  }
+
+  .image-container:hover .deal-image-hover {
+    opacity: 1; /* Show hover image on hover */
+  }
+
+  .specifications {
+    padding: 10px; /* Add padding inside the card */
+  }
+
+  .specifications .stars {
+    margin-bottom: 10px; /* Space between stars and the following elements */
+  }
+
+  .countdown {
+    display: flex; /* Flex display for countdown sections */
+    flex-direction: row; /* Align countdown sections horizontally */
+    justify-content: space-between; /* Space out countdown sections */
+    margin-top: 10px; /* Add top margin */
+  }
+
+  .countdown div {
+    text-align: center; /* Center text inside each countdown section */
+  }
+
+  .w3-light-grey {
+    margin: 10px 0; /* Add vertical spacing around the progress bar */
+  }
+
+  .add-to-cart {
+    margin-top: 10px; /* Add space above the button */
+    padding: 8px; /* Adjust padding inside the button */
+    background-color: black; /* Blue background for the button */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 0.9rem; /* Adjust font size */
+    width: 100%; /* Ensure button takes full width */
+  }
+
+  .add-to-cart:hover {
+    background-color: #ff7e00; /* Darker blue on hover */
+  }
+}
+
+

@@ -1,0 +1,797 @@
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 8px 0px;
+}
+
+.main-div {
+  background-color: #232f3f;
+}
+
+.navbar {
+  width: 100vw;
+  background-color: #232f3f;
+  border-color: #2e3a48;
+  color: #93969d;
+  /* padding: 10px 20px;  */
+  /* box-sizing: border-box;   */
+}
+
+.top-nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -20px;
+  padding: 0px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #93969d;
+}
+
+a:hover {
+  color: #ff7e00;
+  transition: color 1s ease;
+}
+
+.signup-nav {
+  display: flex;
+  align-items: center;
+}
+
+.signup-text {
+  position: relative;
+  margin-right: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.language-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 5px 5px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+nav {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.language-image {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.dropdown-item {
+  text-decoration: none;
+  color: #93969d;
+}
+
+.dropdown-item:hover {
+  color: #ff7e00;
+  text-decoration: none;
+  background-color: transparent;
+  transition: color 1s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: transparent;
+}
+
+.language-image1 {
+  width: 25px;
+  height: 15px;
+}
+
+hr {
+  width: 100%;
+  color: #93969d;
+  border: solid 0.1px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+/* middle nav */
+.middle-nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  align-items: center;
+  margin-bottom: -25px;
+  margin-top: -30px;
+}
+
+.logo-image {
+  width: 150px;
+  height: 70px;
+}
+
+.middle-div {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  background-color: white;
+  padding: 0px 5px;
+  padding-left: 20px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  height: 50px;
+  /* width: 600px; */
+}
+
+.right-div {
+  display: flex;
+  justify-content: space-evenly;
+
+
+}
+
+.category-list {
+  outline: none;
+  border: none;
+  color: black;
+}
+
+.category-div .category-list {
+  /* font-weight: 500; */
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  margin-left: 20px;
+  border-left: 1px solid #93969d;
+  margin-right: 20px;
+}
+
+.search-btn {
+  border: none;
+  color: white;
+  background-color: #ff7e00;
+  border-radius: 50px;
+  padding: 10px 40px;
+  margin-left: 50px;
+}
+
+.fa-user,
+.fa-heart,
+.fa-cart-shopping {
+  font-size: 30px;
+  margin-right: 10px;
+  color: white;
+  /* font-weight: 300; */
+}
+
+.middle-nav-text,
+.middle-nav-text1 {
+  color: #93969d;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.middle-nav-text1 {
+  color: white;
+}
+
+.super {
+  font-size: 10px;
+  position: relative;
+  top: -25px;
+  left: -10px;
+  z-index: 1;
+  background-color: #ff7e00;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -15px;
+  margin-bottom: -8px;
+  width: 100%;
+  /* position: sticky;
+  top: 0; */
+  /* background-color: #232f3f;
+  z-index: 1000;
+  padding: 0px 0px; */
+  padding: 0px 25px 0px 10px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.select-div {
+  background-color: #ff7e00;
+  padding: 12px 20px;
+  width: 300px;
+  border-radius: 2px;
+}
+
+select {
+  border: none;
+  background-color: none;
+  outline: none;
+  color: white;
+  background: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.fa-bell {
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+}
+
+.hot-line-div {
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  /* z-index: -1; */
+}
+
+.search-modal {
+  position: absolute;
+  top: 100%;
+  /* Position the modal just below the search bar */
+  left: 250px;
+  width: 600px;
+  height: 500px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-y: auto;
+  /* Enable vertical scrolling if needed */
+  max-width: 100%;
+  /* Ensure the modal doesn't exceed the viewport width */
+}
+
+.search-modal-content {
+  padding: 30px;
+  position: relative;
+}
+
+.search-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.search-result-image {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+
+.search-result-title {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+}
+
+.price3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: red;
+}
+
+.text-white-2 {
+  color: white;
+
+}
+
+/* for small screen */
+
+@media (max-width: 1024px) {
+  .middle-div .category-div {
+    display: none;
+  }
+
+  .right-div,
+  .bottom-nav,
+  .about-nav,
+  .signup-nav {
+    display: none;
+    /* Hide login and wishlist divs */
+  }
+
+  .middle-nav .search-div {
+    display: none;
+
+  }
+
+  .middle-div {
+    background: none;
+  }
+
+  .language-nav .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media(max-width:320px) {
+  .main-div {
+    width: 320px;
+    background-color: #232f3f;
+  }
+
+  .bottom-nav-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -15px; /* Consider revising or removing negative margins */
+    margin-bottom: 0px;
+    width: 100%;
+    padding: 0px 25px 0px 10px;
+    background-color: white;
+    border-radius: 50px;
+    /* Optional: Uncomment if you want to fix the position */
+    /* position: sticky;
+    top: 0;
+    background-color: #232f3f;
+    z-index: 1000; */
+  }
+  
+  .bottom-nav-1 .search-div1 {
+    display: flex;
+    position: relative;
+    width: calc(100% - 60px); /* Adjusted to fit within parent, subtracting margin */
+    background-color: white;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px 10px 10px 0px;
+    /* Optional: Uncomment if you need rounded corners */
+    /* border-radius: 50px; */
+  }
+  
+  .search-btn1 {
+    border: none;
+    color: white;
+    background-color: #ff7e00;
+    border-radius: 50px;
+    padding: 10px 40px;
+    /* Adjust margin as needed */
+    margin-left: -50px; /* Adjust to ensure proper spacing */
+  }
+}  
+@media (min-width:1025px) {
+  .bottom-nav-1
+  {
+    display: none;
+  }
+}
+
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .main-div {
+    width: 375px;
+    background-color: #232f3f;
+  }
+
+  .bottom-nav-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -15px; /* Consider revising or removing negative margins */
+    margin-bottom: 0px;
+    width: 100%;
+    padding: 0px 25px 0px 10px;
+    background-color: white;
+    border-radius: 50px;
+  }
+  
+  .bottom-nav-1 .search-div1 {
+    display: flex;
+    position: relative;
+    width: calc(100% - 60px); /* Adjusted to fit within parent, subtracting margin */
+    background-color: white;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px 0px;
+    /* Optional: Uncomment if you need rounded corners */
+    /* border-radius: 50px; */
+  }
+  
+  .search-btn1 {
+    border: none;
+    color: white;
+    background-color: #ff7e00;
+    border-radius: 50px;
+    padding: 10px 40px;
+    /* Adjust margin as needed */
+    margin-left: 0; /* Adjust to ensure proper spacing */
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .main-div {
+    width: 425px;
+    background-color: #232f3f;
+  }
+
+  .bottom-nav-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -15px; /* Consider revising or removing negative margins */
+    margin-bottom: 0px;
+    width: 100%;
+    padding: 0px 25px 0px 10px;
+    background-color: white;
+    border-radius: 50px;
+  }
+  
+  .bottom-nav-1 .search-div1 {
+    display: flex;
+    position: relative;
+    width: calc(100% - 60px); /* Adjusted to fit within parent, subtracting margin */
+    background-color: white;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px 0px;
+    /* Optional: Uncomment if you need rounded corners */
+    /* border-radius: 50px; */
+  }
+  
+  .search-btn1 {
+    border: none;
+    color: white;
+    background-color: #ff7e00;
+    border-radius: 50px;
+    padding: 10px 40px;
+    /* Adjust margin as needed */
+    margin-left: 0px; /* Adjust to ensure proper spacing */
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .main-div {
+    width: 768px;
+    background-color: #232f3f;
+  }
+
+  .bottom-nav-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -15px; /* Consider revising or removing negative margins */
+    margin-bottom: 0px;
+    width: 500px;
+    padding: 0px 25px 0px 10px;
+    background-color: white;
+    border-radius: 50px;
+  }
+  
+  .bottom-nav-1 .search-div1 {
+    display: flex;
+    position: relative;
+    width: calc(100% - 60px); /* Adjusted to fit within parent, subtracting margin */
+    background-color: white;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px 0px;
+    /* Optional: Uncomment if you need rounded corners */
+    /* border-radius: 50px; */
+  }
+  
+  .search-btn1 {
+    border: none;
+    color: white;
+    background-color: #ff7e00;
+    border-radius: 50px;
+    padding: 10px 40px;
+    /* Adjust margin as needed */
+    margin-left: 100px; /* Adjust to ensure proper spacing */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-div {
+    width: 1024px;
+    background-color: #232f3f;
+  }
+
+  .bottom-nav-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -15px; /* Consider revising or removing negative margins */
+    margin-bottom: 0px;
+    width: 500px;
+    padding: 0px 25px 0px 10px;
+    background-color: white;
+    border-radius: 50px;
+  }
+  
+  .bottom-nav-1 .search-div1 {
+    display: flex;
+    position: relative;
+    width: calc(100% - 60px); /* Adjusted to fit within parent, subtracting margin */
+    background-color: white;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px 0px;
+    /* Optional: Uncomment if you need rounded corners */
+    /* border-radius: 50px; */
+  }
+  
+  .search-btn1 {
+    border: none;
+    color: white;
+    background-color: #ff7e00;
+    border-radius: 50px;
+    padding: 10px 40px;
+    /* Adjust margin as needed */
+    margin-left: 100px; /* Adjust to ensure proper spacing */
+  }
+}
+
+@media (min-width:1025px) {
+  .min-cart-div
+  {
+    display: none;
+  }
+}
+
+
+/* styles.css */
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.modal-content1 {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close1 {
+  color: #aaa;
+  /* float: right; */
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;  
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.close1:hover,
+.close1:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.search-bar1 {
+  margin-bottom: 15px;
+}
+
+.search-bar1 input {
+  width: 100%;
+  padding: 10px;
+}
+
+.auth-links,
+.nav-links {
+  margin-bottom: 15px;
+}
+
+.auth-links a,
+.nav-links a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.auth-links a:hover,
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries */
+@media (max-width: 320px) {
+  .modal1 {
+    width: 320px;
+    /* left: -50px; */
+    height: auto;
+    z-index: 1000;
+  }
+}
+
+@media (min-width:426px) and (max-width: 1024px) {
+  .modal1 {
+    width: 500px;
+    left: 0;
+    height: auto;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 1025px) {
+  .modal1 {
+    display: none; /* Hide modal on screens wider than 1024px */
+  }
+  .modal-content1 {
+    display: none;
+  }
+  .hamburger {
+    display: none; /* Hide hamburger on screens wider than 1024px */
+  }
+}
+
+.search-bar1 {
+  position: relative; /* This allows absolute positioning of the icon */
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  width: 100%; /* Adjust width as needed */
+}
+
+.search-bar2 {
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 50px;
+  color: #232f3f;
+  padding: 10px 40px 10px 20px; /* Add padding to make space for the icon */
+  box-shadow: 0px 4px 6px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure it takes full width of the container */
+}
+
+.fa-magnifying-glass {
+  position: absolute; /* Position the icon absolutely within the container */
+  right: 10px; /* Adjust as needed to align with the right edge of the input */
+  font-size: 20px;
+  color: #232f3f; /* Match the color with the input text color */
+}
+.auth-links
+{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.users-group
+{
+  font-size: 20px;
+}
+.middle-nav-text2,.splash
+{
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+}
+/* Base styles for the navigation link */
+.nav-link1 {
+  text-decoration: none; /* Remove underline by default */
+  outline: none; /* Remove focus outline */
+  margin: 0 5px; /* Margin between links */
+  color: inherit; /* Inherit color from parent */
+  transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+/* Styles for hover state */
+.nav-link1:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+  color: #ff7e00; /* Color change on hover */
+  transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+/* Styles for active state */
+.nav-link1:active {
+  text-decoration: none; /* Ensure no underline when active */
+  outline: none; /* Remove focus outline when active */
+  border: none; /* Remove border if any */
+  /* No need for 'under-line' property */
+}
+
+.nav-link1:focus {
+    text-decoration: none; /* Ensure no underline on focus */
+}
+.hamburgur-title
+{
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-links-1
+{
+  color: black !important;
+  text-decoration: none;
+  margin-bottom: -10px;
+  margin-top: -10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.nav-links-1:hover {
+  color: #ff7e00; /* Color change on hover */
+}
+
+/* Styles for visited state */
+.nav-links-1:visited {
+  color: black; /* Ensure color remains black after visiting */
+}

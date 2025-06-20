@@ -1,0 +1,32 @@
+.pagenot-found-div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.return-home-div
+{
+    margin-top: 50px;
+}
+.home-text2
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+.home-text2:hover
+{
+    text-decoration: none;
+}
+.page-notfound-image
+{
+    width: 500px;
+    height: 300px;
+}
+.page-notfound-text
+{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
